@@ -15,14 +15,14 @@ using Microsoft.CodeAnalysis.Text;
 
 namespace Esw.UnitTest.Common.Analyzers
 {
-    [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(EswUnitTestCommonAnalyzersCodeFixProvider)), Shared]
+    //[ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(EswUnitTestCommonAnalyzersCodeFixProvider)), Shared]
     public class EswUnitTestCommonAnalyzersCodeFixProvider : CodeFixProvider
     {
         private const string title = "Make uppercase";
 
         public sealed override ImmutableArray<string> FixableDiagnosticIds
         {
-            get { return ImmutableArray.Create(EswUnitTestCommonAnalyzersAnalyzer.DiagnosticId); }
+            get { return ImmutableArray.Create(EnsureXUnitAnalyzer.DiagnosticId); }
         }
 
         public sealed override FixAllProvider GetFixAllProvider()
