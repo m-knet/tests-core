@@ -71,12 +71,12 @@ namespace Esw.UnitTest.Common.Analyzers.Test
 
         protected override CodeFixProvider GetCSharpCodeFixProvider()
         {
-            return new EswUnitTestCommonAnalyzersCodeFixProvider();
+            return new EnsurexUnitCodeFixProvider();
         }
 
         protected override DiagnosticAnalyzer GetCSharpDiagnosticAnalyzer()
         {
-            return new EnsureXUnitAnalyzer();
+            return new EnsurexUnitAnalyzer();
         }
     }
 }

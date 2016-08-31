@@ -1,12 +1,13 @@
 namespace Esw.UnitTest.Common.Analyzers
 {
-    using System;
     using System.Collections.Immutable;
     using Microsoft.CodeAnalysis;
+    using Microsoft.CodeAnalysis.CSharp;
+    using Microsoft.CodeAnalysis.CSharp.Syntax;
     using Microsoft.CodeAnalysis.Diagnostics;
 
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
-    public class EnsureXUnitAnalyzer : DiagnosticAnalyzer
+    public class EnsurexUnitAnalyzer : DiagnosticAnalyzer
     {
         public const string DiagnosticId = "ESWU001";
 
@@ -23,12 +24,17 @@ namespace Esw.UnitTest.Common.Analyzers
 
         public override void Initialize(AnalysisContext context)
         {
-            context.RegisterCodeBlockAction(EnsureXUnit);
+            context.RegisterSyntaxNodeAction(EnsureXUnit, SyntaxKind.MethodDeclaration);
         }
 
-        private static void EnsureXUnit(CodeBlockAnalysisContext context)
+        private static void EnsureXUnit(SyntaxNodeAnalysisContext context)
         {
-            throw new NotImplementedException();
+            var visitor = new WrongTestFrameworkVisitor();
+
+            if (visitor.Visit(context.Node))
+            {
+                context.ReportDiagnostic(Diagnostic.Create(Rule, context.Node.GetLocation(), ((MethodDeclarationSyntax)context.Node).Identifier.Text));
+            }
         }
     }
 }
