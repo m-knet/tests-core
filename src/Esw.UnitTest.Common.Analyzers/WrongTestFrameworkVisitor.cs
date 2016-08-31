@@ -8,12 +8,7 @@ namespace Esw.UnitTest.Common.Analyzers
     {
         public override bool VisitMethodDeclaration(MethodDeclarationSyntax node)
         {
-            if (node.AttributeLists.SelectMany(l => l.Attributes).Any(a => a.Name.ToString() == "TestMethod"))
-            {
-                return true;
-            }
-
-            return false;
+            return node.AttributeLists.SelectMany(l => l.Attributes).Any(a => a.Name.ToString() == "TestMethod");
         }
     }
 }

@@ -10,7 +10,7 @@
         {
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("Foo")] // WAZZA!
         public void DebugMethod2()
         {
         }

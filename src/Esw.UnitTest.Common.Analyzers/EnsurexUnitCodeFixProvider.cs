@@ -1,5 +1,6 @@
 ﻿namespace Esw.UnitTest.Common.Analyzers
 {
+    using System.Collections.Generic;
     using System.Collections.Immutable;
     using System.Composition;
     using System.Linq;
@@ -40,25 +41,40 @@
             var newMethod = rewriter.Visit(node);
 
             var docRoot = await document.GetSyntaxRootAsync(cancellationToken);
+            docRoot = docRoot.ReplaceNode(node, newMethod);
 
-            return document.WithSyntaxRoot(docRoot.ReplaceNode(node, newMethod));
+            var compilation = docRoot as CompilationUnitSyntax;
+
+            if (compilation == null) return document.WithSyntaxRoot(docRoot);
+
+            if (compilation.Usings.All(u => u.Name.ToString() != "Xunit"))
+            {
+                docRoot = compilation.AddUsings(SyntaxFactory.UsingDirective(SyntaxFactory.IdentifierName("Xunit")));
+            }
+
+            return document.WithSyntaxRoot(docRoot);
         }
     }
+
+    // TODO: SWAP TO CLIB INSTEAD OF PCL AND MOVE TO NAMEOF!
+
     public class WrongTestFrameworkRewriter : CSharpSyntaxRewriter
     {
         public override SyntaxNode VisitMethodDeclaration(MethodDeclarationSyntax node)
         {
-            var msTestList = node.AttributeLists.Where(l => l.Attributes.Any(a => a.Name.ToString() == "TestClass")); // TODO: SWAP TO CLIB INSTEAD OF PCL AND MOVE TO NAMEOF!
-            var resultList = new SyntaxList<AttributeListSyntax>();
+            var msTestList = node.AttributeLists.Where(l => l.Attributes.Any(a => a.Name.ToString() == "TestMethod")); 
+            var resultList = new List<AttributeListSyntax>();
 
             foreach (var list in msTestList)
             {
-                var aList = new SeparatedSyntaxList<AttributeSyntax>();
-                aList.AddRange(list.Attributes.Where(a => a.Name.ToString() == "TestClass")); // TODO: SWAP TO CLIB INSTEAD OF PCL AND MOVE TO NAMEOF!
-                resultList.Add(list.WithAttributes(aList).WithTriviaFrom(list));
+                var aList = new List<AttributeSyntax>();
+                aList.AddRange(list.Attributes.Where(a => a.Name.ToString() != "TestMethod"));
+                aList.Add(SyntaxFactory.Attribute(SyntaxFactory.ParseName("Fact")));
+
+                resultList.Add(SyntaxFactory.AttributeList(SyntaxFactory.SeparatedList(aList)).WithTriviaFrom(list));
             }
 
-            return node.WithAttributeLists(resultList).WithTriviaFrom(node);
+            return node.WithAttributeLists(SyntaxFactory.List(resultList)).WithTriviaFrom(node);
         }
     }
 }
