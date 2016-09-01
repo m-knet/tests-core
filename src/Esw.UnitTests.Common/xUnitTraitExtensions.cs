@@ -7,7 +7,7 @@
     using Xunit.Sdk;
 
     /// <summary>
-    /// Decorates a test as an Unit Test, so that it runs in Continuous Integration builds.
+    /// Decorates a test as a Unit Test, so that it runs in Continuous Integration builds.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public sealed class IsUnitAttribute : EswCategoryAttribute
@@ -35,7 +35,7 @@
     }
 
     /// <summary>
-    /// Decorates a test as an Unit Test and as requiring Fakes to be present, so that it runs in Continuous Integration builds.
+    /// Decorates a test as a Unit Test and as requiring Fakes to be present, so that it runs in Continuous Integration builds.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public sealed class IsFakesAttribute : EswCategoryAttribute
@@ -49,7 +49,7 @@
     }
 
     /// <summary>
-    /// Decorates a test as an Unit Test and as requiring Code Contracts to be present, so that it runs in Continuous Integration builds.
+    /// Decorates a test as a Unit Test and as requiring Code Contracts to be present, so that it runs in Continuous Integration builds.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public sealed class IsCodeContractAttribute : EswCategoryAttribute
@@ -63,7 +63,7 @@
     }
 
     /// <summary>
-    /// Decorates a test as an Unit Test and as requiring Roslyn to be present, so that it runs in Continuous Integration builds.
+    /// Decorates a test as a Unit Test and as requiring Roslyn to be present, so that it runs in Continuous Integration builds.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public sealed class IsRoslynAttribute : EswCategoryAttribute
