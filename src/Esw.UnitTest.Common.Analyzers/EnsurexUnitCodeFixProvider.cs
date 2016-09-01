@@ -1,6 +1,5 @@
 ﻿namespace Esw.UnitTest.Common.Analyzers
 {
-    using System.Collections.Generic;
     using System.Collections.Immutable;
     using System.Composition;
     using System.Linq;
@@ -11,6 +10,8 @@
     using Microsoft.CodeAnalysis.CodeFixes;
     using Microsoft.CodeAnalysis.CSharp;
     using Microsoft.CodeAnalysis.CSharp.Syntax;
+
+    // TODO: SWAP TO CLIB INSTEAD OF PCL AND MOVE TO NAMEOF!
 
     [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(EnsurexUnitCodeFixProvider)), Shared]
     public class EnsurexUnitCodeFixProvider : CodeFixProvider
@@ -53,28 +54,6 @@
             }
 
             return document.WithSyntaxRoot(docRoot);
-        }
-    }
-
-    // TODO: SWAP TO CLIB INSTEAD OF PCL AND MOVE TO NAMEOF!
-
-    public class WrongTestFrameworkRewriter : CSharpSyntaxRewriter
-    {
-        public override SyntaxNode VisitMethodDeclaration(MethodDeclarationSyntax node)
-        {
-            var msTestList = node.AttributeLists.Where(l => l.Attributes.Any(a => a.Name.ToString() == "TestMethod")); 
-            var resultList = new List<AttributeListSyntax>();
-
-            foreach (var list in msTestList)
-            {
-                var aList = new List<AttributeSyntax>();
-                aList.AddRange(list.Attributes.Where(a => a.Name.ToString() != "TestMethod"));
-                aList.Add(SyntaxFactory.Attribute(SyntaxFactory.ParseName("Fact")));
-
-                resultList.Add(SyntaxFactory.AttributeList(SyntaxFactory.SeparatedList(aList)).WithTriviaFrom(list));
-            }
-
-            return node.WithAttributeLists(SyntaxFactory.List(resultList)).WithTriviaFrom(node);
         }
     }
 }

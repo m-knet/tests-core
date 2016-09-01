@@ -87,5 +87,32 @@ namespace Esw.UnitTest.Common.Analyzers {
                 return ResourceManager.GetString("AnalyzerTitle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tests need to be marked with Is* (ex: IsUnit) to run in a CI/CD build.
+        /// </summary>
+        internal static string IsTestDescription {
+            get {
+                return ResourceManager.GetString("IsTestDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The test &apos;{0}&apos; is not using any Is* so it won&apos;t run as part of a build.
+        /// </summary>
+        internal static string IsTestMessageFormat {
+            get {
+                return ResourceManager.GetString("IsTestMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you want your test to run in a CI/CD build you need to mark it with Is* (ex: IsUnit).
+        /// </summary>
+        internal static string IsTestTitle {
+            get {
+                return ResourceManager.GetString("IsTestTitle", resourceCulture);
+            }
+        }
     }
 }

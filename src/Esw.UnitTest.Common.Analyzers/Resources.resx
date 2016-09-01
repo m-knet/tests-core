@@ -129,4 +129,16 @@
     <value>Use xUnit instead of MSTest</value>
     <comment>The title of the diagnostic.</comment>
   </data>
+  <data name="IsTestDescription" xml:space="preserve">
+    <value>Tests need to be marked with Is* (ex: IsUnit) to run in a CI/CD build</value>
+    <comment>An optional longer localizable description of the diagnostic.</comment>
+  </data>
+  <data name="IsTestMessageFormat" xml:space="preserve">
+    <value>The test '{0}' is not using any Is* so it won't run as part of a build</value>
+    <comment>The format-able message the diagnostic displays.</comment>
+  </data>
+  <data name="IsTestTitle" xml:space="preserve">
+    <value>If you want your test to run in a CI/CD build you need to mark it with Is* (ex: IsUnit)</value>
+    <comment>The title of the diagnostic.</comment>
+  </data>
 </root>

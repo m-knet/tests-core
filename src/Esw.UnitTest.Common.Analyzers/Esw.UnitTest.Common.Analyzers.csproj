@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="EnsureIsTestAnalyzer.cs" />
     <Compile Include="EnsurexUnitCodeFixProvider.cs" />
     <Compile Include="EnsurexUnitAnalyzer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -40,6 +41,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="WrongTestFrameworkRewriter.cs" />
+    <Compile Include="WrongIsTestVisitor.cs" />
     <Compile Include="WrongTestFrameworkVisitor.cs" />
   </ItemGroup>
   <ItemGroup>
