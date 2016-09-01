@@ -11,7 +11,15 @@ namespace Esw.UnitTest.Common.Analyzers
             new[]
             {
                 "IsUnit",
-                "IsIntegration"
+                "IsUnitAttribute",
+                "IsIntegration",
+                "IsIntegrationAttribute",
+                "IsFakes",
+                "IsFakesAttribute",
+                "IsCodeContract",
+                "IsCodeContractAttribute",
+                "IsRoslyn",
+                "IsRoslynAttribute"
             };
 
         public override bool VisitMethodDeclaration(MethodDeclarationSyntax node)

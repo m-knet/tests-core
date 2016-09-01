@@ -29,7 +29,7 @@
         /// <summary>
         /// Initializes a new instance of <see cref="IsIntegrationAttribute"/>
         /// </summary>
-        public IsIntegrationAttribute() : base("Unit")
+        public IsIntegrationAttribute() : base("Integration")
         {
         }
     }
