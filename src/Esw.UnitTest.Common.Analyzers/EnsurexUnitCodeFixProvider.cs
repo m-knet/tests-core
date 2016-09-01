@@ -19,7 +19,7 @@
         private const string Title = "Use xUnit";
         private const string XunitNamespace = "Xunit";
 
-        public sealed override ImmutableArray<string> FixableDiagnosticIds => ImmutableArray.Create(EnsurexUnitAnalyzer.DiagnosticId);
+        public sealed override ImmutableArray<string> FixableDiagnosticIds => ImmutableArray.Create(EnsureTestFrameworkAnalyzer.DiagnosticId);
 
         public sealed override FixAllProvider GetFixAllProvider()
         {

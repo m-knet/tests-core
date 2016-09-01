@@ -76,7 +76,7 @@ namespace Esw.UnitTest.Common.Analyzers.Test
 
         protected override DiagnosticAnalyzer GetCSharpDiagnosticAnalyzer()
         {
-            return new EnsurexUnitAnalyzer();
+            return new EnsureTestFrameworkAnalyzer();
         }
     }
 }

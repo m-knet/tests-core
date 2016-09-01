@@ -7,13 +7,13 @@ namespace Esw.UnitTest.Common.Analyzers
     using Microsoft.CodeAnalysis.Diagnostics;
 
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
-    public class EnsurexUnitAnalyzer : DiagnosticAnalyzer
+    public class EnsureTestFrameworkAnalyzer : DiagnosticAnalyzer
     {
         public const string DiagnosticId = "ESWU001";
 
-        private static readonly LocalizableString Title = new LocalizableResourceString(nameof(Resources.AnalyzerTitle), Resources.ResourceManager, typeof(Resources));
-        private static readonly LocalizableString MessageFormat = new LocalizableResourceString(nameof(Resources.AnalyzerMessageFormat), Resources.ResourceManager, typeof(Resources));
-        private static readonly LocalizableString Description = new LocalizableResourceString(nameof(Resources.AnalyzerDescription), Resources.ResourceManager, typeof(Resources));
+        private static readonly LocalizableString Title = new LocalizableResourceString(nameof(Resources.TestFrameworkTitle), Resources.ResourceManager, typeof(Resources));
+        private static readonly LocalizableString MessageFormat = new LocalizableResourceString(nameof(Resources.TestFrameworkMessageFormat), Resources.ResourceManager, typeof(Resources));
+        private static readonly LocalizableString Description = new LocalizableResourceString(nameof(Resources.TestFrameworkDescription), Resources.ResourceManager, typeof(Resources));
 
         private const bool EnabledByDefault = true;
         private const string Category = "Frameworks";

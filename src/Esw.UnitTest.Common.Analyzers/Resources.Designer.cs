@@ -62,33 +62,6 @@ namespace Esw.UnitTest.Common.Analyzers {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to eShopWorld uses xUnit as the Test framework.
-        /// </summary>
-        internal static string AnalyzerDescription {
-            get {
-                return ResourceManager.GetString("AnalyzerDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The test &apos;{0}&apos; is using MSTest instead of xUnit.
-        /// </summary>
-        internal static string AnalyzerMessageFormat {
-            get {
-                return ResourceManager.GetString("AnalyzerMessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Use xUnit instead of MSTest.
-        /// </summary>
-        internal static string AnalyzerTitle {
-            get {
-                return ResourceManager.GetString("AnalyzerTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Tests need to be marked with Is* (ex: IsUnit) to run in a CI/CD build.
         /// </summary>
         internal static string IsTestDescription {
@@ -112,6 +85,33 @@ namespace Esw.UnitTest.Common.Analyzers {
         internal static string IsTestTitle {
             get {
                 return ResourceManager.GetString("IsTestTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to eShopWorld uses xUnit as the Test framework.
+        /// </summary>
+        internal static string TestFrameworkDescription {
+            get {
+                return ResourceManager.GetString("TestFrameworkDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The test &apos;{0}&apos; is using MSTest instead of xUnit.
+        /// </summary>
+        internal static string TestFrameworkMessageFormat {
+            get {
+                return ResourceManager.GetString("TestFrameworkMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use xUnit instead of MSTest.
+        /// </summary>
+        internal static string TestFrameworkTitle {
+            get {
+                return ResourceManager.GetString("TestFrameworkTitle", resourceCulture);
             }
         }
     }
