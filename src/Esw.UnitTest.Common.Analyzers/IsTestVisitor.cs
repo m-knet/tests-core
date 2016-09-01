@@ -5,7 +5,7 @@ namespace Esw.UnitTest.Common.Analyzers
     using Microsoft.CodeAnalysis.CSharp;
     using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-    public class WrongIsTestVisitor : CSharpSyntaxVisitor<bool>
+    public class IsTestVisitor : CSharpSyntaxVisitor<bool>
     {
         private readonly IEnumerable<string> _isTestAttributes =
             new[]

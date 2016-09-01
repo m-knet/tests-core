@@ -29,7 +29,7 @@ namespace Esw.UnitTest.Common.Analyzers
 
         private static void EnsureXUnit(SyntaxNodeAnalysisContext context)
         {
-            var visitor = new WrongTestFrameworkVisitor();
+            var visitor = new TestFrameworkVisitor();
 
             if (visitor.Visit(context.Node))
             {

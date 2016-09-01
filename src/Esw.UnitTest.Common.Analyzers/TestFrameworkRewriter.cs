@@ -6,7 +6,7 @@ namespace Esw.UnitTest.Common.Analyzers
     using Microsoft.CodeAnalysis.CSharp;
     using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-    public class WrongTestFrameworkRewriter : CSharpSyntaxRewriter
+    public class TestFrameworkRewriter : CSharpSyntaxRewriter
     {
         public override SyntaxNode VisitMethodDeclaration(MethodDeclarationSyntax node)
         {

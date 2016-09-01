@@ -29,7 +29,7 @@ namespace Esw.UnitTest.Common.Analyzers
 
         private static void EnsureIsTest(SyntaxNodeAnalysisContext context)
         {
-            var visitor = new WrongIsTestVisitor();
+            var visitor = new IsTestVisitor();
 
             if (visitor.Visit(context.Node))
             {

@@ -41,9 +41,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="WrongTestFrameworkRewriter.cs" />
-    <Compile Include="WrongIsTestVisitor.cs" />
-    <Compile Include="WrongTestFrameworkVisitor.cs" />
+    <Compile Include="TestFrameworkRewriter.cs" />
+    <Compile Include="IsTestVisitor.cs" />
+    <Compile Include="TestFrameworkVisitor.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx">

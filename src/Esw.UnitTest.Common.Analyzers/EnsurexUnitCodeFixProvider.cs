@@ -38,7 +38,7 @@
 
         private static async Task<Document> ReplaceTestClassWithFact(Document document, SyntaxNode node, CancellationToken cancellationToken)
         {
-            var rewriter = new WrongTestFrameworkRewriter();
+            var rewriter = new TestFrameworkRewriter();
             var newMethod = rewriter.Visit(node);
 
             var docRoot = await document.GetSyntaxRootAsync(cancellationToken);
