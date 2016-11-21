@@ -114,9 +114,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Esw.UnitTest.Common.Analyzers\Esw.UnitTest.Common.Analyzers.csproj">
+    <ProjectReference Include="..\..\DevOpsFlex.Tests.Core.Analyzers\DevOpsFlex.Tests.Core.Analyzers.csproj">
       <Project>{ED355FCA-65CF-4207-8429-96A4C53AB74C}</Project>
-      <Name>Esw.UnitTest.Common.Analyzers</Name>
+      <Name>DevOpsFlex.Tests.Core.Analyzers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

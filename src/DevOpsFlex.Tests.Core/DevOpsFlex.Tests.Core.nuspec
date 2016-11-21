@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Esw.UnitTest.Common</id>
-    <version>0.1.0</version>
+    <id>DevOpsFlex.Tests.Core</id>
+    <version>1.0.0</version>
     <authors>David Rodrigues</authors>
     <owners>eShopWorld</owners>
     <licenseUrl>https://github.com/eShopWorld/Esw.UnitTest.Common/blob/master/LICENSE</licenseUrl>
@@ -10,7 +10,7 @@
     <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>eShopWorld common test stack</description>
-    <releaseNotes>Initial package.</releaseNotes>
+    <releaseNotes>Initial release.</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>Test, Unit Test, xUnit, Moq, FluentAssertions</tags>
     <dependencies>

@@ -1,4 +1,4 @@
-﻿namespace Esw.UnitTest.Common
+﻿namespace DevOpsFlex.Tests.Core
 {
     using System;
     using System.Collections.Generic;
@@ -100,8 +100,7 @@
     /// </summary>
     public class EswCategoryDiscoverer : ITraitDiscoverer
     {
-        internal const string Namespace = nameof(Esw) + "." + nameof(UnitTest) + "." + nameof(Common);
-
+        internal const string Namespace = nameof(DevOpsFlex) + "." + nameof(Tests) + "." + nameof(Core);
         internal const string FullyQualifiedName = Namespace + "." + nameof(EswCategoryDiscoverer);
 
         /// <summary>Gets the trait values from the trait attribute.</summary>

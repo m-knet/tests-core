@@ -1,4 +1,4 @@
-﻿namespace Esw.UnitTest.Common
+﻿namespace DevOpsFlex.Tests.Core
 {
     using System;
     using FluentAssertions;
