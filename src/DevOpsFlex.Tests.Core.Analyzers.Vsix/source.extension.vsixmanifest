@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="Esw.UnitTest.Common.Analyzers..800aa284-220f-449d-a265-362ce1e278f3" Version="1.5" Language="en-US" Publisher="David Rodrigues"/>
-    <DisplayName>Esw.UnitTest.Common.Analyzers</DisplayName>
+    <Identity Id="DevOpsFlex.Tests.Core.Analyzers..6d3f97c9-17ad-4765-87ec-f00282e6a9fa" Version="1.0.0" Language="en-US" Publisher="David Rodrigues"/>
+    <DisplayName>DevOpsFlex.Tests.Core.Analyzers</DisplayName>
     <Description xml:space="preserve">This is a sample diagnostic extension for the .NET Compiler Platform ("Roslyn").</Description>
   </Metadata>
   <Installation>
