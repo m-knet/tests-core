@@ -8,8 +8,8 @@
     <ProjectGuid>{62938EBD-F83A-4F9C-8BA6-6A08E7FDAFE6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Esw.UnitTest.Common.Analyzers.Test</RootNamespace>
-    <AssemblyName>Esw.UnitTest.Common.Analyzers.Test</AssemblyName>
+    <RootNamespace>DevOpsFlex.Tests.Core.Analyzers.Test</RootNamespace>
+    <AssemblyName>DevOpsFlex.Tests.Core.Analyzers.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

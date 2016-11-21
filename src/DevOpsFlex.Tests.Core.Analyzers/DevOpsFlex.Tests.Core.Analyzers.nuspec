@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>Esw.UnitTest.Common.Analyzers</id>
-    <version>0.1.0.0</version>
-    <title>Esw.UnitTest.Common.Analyzers</title>
+    <id>DevOpsFlex.Tests.Core.Analyzers</id>
+    <version>1.0.0</version>
+    <title>DevOpsFlex.Tests.Core.Analyzers</title>
     <authors>David Rodrigues</authors>
     <owners>eShopWorld</owners>
     <licenseUrl>https://github.com/eShopWorld/Esw.UnitTest.Common/blob/master/LICENSE</licenseUrl>
@@ -13,7 +13,7 @@
     <description>Common entry point for any unit test assembly in eShopWorld.</description>
     <releaseNotes>initial release of the package.</releaseNotes>
     <copyright>eShopWorld</copyright>
-    <tags>Esw.UnitTest.Common.Analyzers, analyzers, unit test, unittest</tags>
+    <tags>devopsflex, analyzers, unit test, unittest</tags>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System" targetFramework="" />
     </frameworkAssemblies>

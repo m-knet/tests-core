@@ -1,4 +1,4 @@
-namespace Esw.UnitTest.Common.Analyzers
+namespace DevOpsFlex.Tests.Core.Analyzers
 {
     using System.Linq;
     using Microsoft.CodeAnalysis.CSharp;

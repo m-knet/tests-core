@@ -1,13 +1,12 @@
-﻿using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CodeFixes;
-using Microsoft.CodeAnalysis.Diagnostics;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using TestHelper;
-using Esw.UnitTest.Common.Analyzers;
-
-namespace Esw.UnitTest.Common.Analyzers.Test
+﻿namespace DevOpsFlex.Tests.Core.Analyzers.Test
 {
+    using System;
+    using Analyzers;
+    using Microsoft.CodeAnalysis;
+    using Microsoft.CodeAnalysis.CodeFixes;
+    using Microsoft.CodeAnalysis.Diagnostics;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     [TestClass]
     public class UnitTest : CodeFixVerifier
     {
