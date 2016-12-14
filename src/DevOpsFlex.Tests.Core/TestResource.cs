@@ -5,8 +5,8 @@
     using System.Reflection;
 
     /// <summary>
-    /// Wraps an embed resource around a class that can materialize it to file system
-    /// and delete on the call to Dispose, to wrap it on a using block.
+    /// Wraps an embed resource around a class that can materialize it to the file system
+    /// and delete on the call to Dispose.
     /// </summary>
     public class TestResource : IDisposable
     {
