@@ -18,5 +18,14 @@
 
         [Fact, IsRoslyn]
         public void Test_IsRoslyn() { }
+
+        [Fact, IsDev]
+        public void Test_IsIsDev() { }
+
+        [Fact, IsProfilerCpu]
+        public void Test_IsProfilerCpu() { }
+
+        [Fact, IsProfilerMemory]
+        public void Test_IsProfilerMemory() { }
     }
 }

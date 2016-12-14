@@ -77,6 +77,51 @@
     }
 
     /// <summary>
+    /// Decorates a test as a development entry point.
+    /// This test never runs on any automated build, is purely a development facility.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+    public sealed class IsDevAttribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsDevAttribute"/>
+        /// </summary>
+        public IsDevAttribute() : base("Dev")
+        {
+        }
+    }
+
+    /// <summary>
+    /// Decorates a test as profiler entry point for profiling CPU.
+    /// This test never runs on any automated build, is purely a development facility.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+    public sealed class IsProfilerCpuAttribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsProfilerCpuAttribute"/>
+        /// </summary>
+        public IsProfilerCpuAttribute() : base("Profiler CPU")
+        {
+        }
+    }
+
+    /// <summary>
+    /// Decorates a test as profiler entry point for profiling memory.
+    /// This test never runs on any automated build, is purely a development facility.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+    public sealed class IsProfilerMemoryAttribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsProfilerMemoryAttribute"/>
+        /// </summary>
+        public IsProfilerMemoryAttribute() : base("Profiler Memory")
+        {
+        }
+    }
+
+    /// <summary>
     /// Base class for all the category model attributes. Contains a list of all the attribute categories
     /// and supports multiple categories.
     /// </summary>
