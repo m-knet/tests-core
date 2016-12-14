@@ -7,12 +7,12 @@
     using Microsoft.CodeAnalysis.Diagnostics;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-    [TestClass]
+    //[TestClass]
     public class UnitTest : CodeFixVerifier
     {
 
         //No diagnostics expected to show up
-        [TestMethod]
+        //[TestMethod]
         public void TestMethod1()
         {
             var test = @"";
@@ -21,7 +21,7 @@
         }
 
         //Diagnostic and CodeFix both triggered and checked for
-        [TestMethod]
+        //[TestMethod]
         public void TestMethod2()
         {
             var test = @"
