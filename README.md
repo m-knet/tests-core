@@ -1,6 +1,4 @@
-Esw.UnitTest.Common
+DevOpsFlex.Tests.Core
 ===================
 
-This is what you include if you want to write Unit Tests on eShop stuff!
-
-(there is obviously missing documentation here :smile: )
+Utility unit test package used in eShopWorld.
