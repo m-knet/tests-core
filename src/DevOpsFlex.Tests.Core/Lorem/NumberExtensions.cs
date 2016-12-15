@@ -4,7 +4,7 @@ namespace DevOpsFlex.Tests.Core
     using System;
     using System.Collections.Generic;
 
-    public static class NumberExtensions
+    internal static class NumberExtensions
     {
         public static IEnumerable<int> To(this int from, int to)
         {

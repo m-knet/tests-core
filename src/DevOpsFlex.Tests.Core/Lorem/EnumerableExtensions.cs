@@ -5,7 +5,7 @@ namespace DevOpsFlex.Tests.Core
     using System.Collections.Generic;
     using System.Linq;
 
-    public static class EnumerableExtensions
+    internal static class EnumerableExtensions
     {
         private static readonly Random Rng = new Random();
 

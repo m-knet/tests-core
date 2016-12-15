@@ -7,37 +7,67 @@ namespace DevOpsFlex.Tests.Core
 
     /// <summary>
     /// From: https://github.com/jonwingfield/Faker.Net
+    /// Added a few cosmetic tweaks to reduce the codebase.
     /// </summary>
     public static class Lorem
     {
         private static readonly Random Rng = new Random();
 
+        /// <summary>
+        /// Gets a single word.
+        /// </summary>
+        /// <returns>A single word.</returns>
         public static string GetWord()
         {
             return Words.Rand();
         }
 
+        /// <summary>
+        /// Gets several words.
+        /// </summary>
+        /// <param name="num">The number of words to get, defaults with 3.</param>
+        /// <returns>Several words.</returns>
         public static IEnumerable<string> GetWords(int num = 3)
         {
             return Words.RandPick(num);
         }
 
+        /// <summary>
+        /// Gets a single sentence.
+        /// </summary>
+        /// <param name="wordCount">The number of words on the sentence, defaults with 4.</param>
+        /// <returns>A single sentence.</returns>
         public static string GetSentence(int wordCount = 4)
         {
             var s = GetWords(wordCount + Rng.Next(6));
             return s.Join(" ").ToUpper() + ".";
         }
 
+        /// <summary>
+        /// Gets several sentences
+        /// </summary>
+        /// <param name="sentenceCount">The number of sentences to get, defaults with 3.</param>
+        /// <returns>Several sentences.</returns>
         public static IEnumerable<string> GetSentences(int sentenceCount = 3)
         {
             return 1.To(sentenceCount).Select(item => GetSentence());
         }
 
+        /// <summary>
+        /// Gets a single paragraph.
+        /// </summary>
+        /// <param name="sentenceCount">The sentences in the paragraph, defaults with 3.</param>
+        /// <returns>A single paragraph.</returns>
         public static string GetParagraph(int sentenceCount = 3)
         {
             return GetSentences(sentenceCount + Rng.Next(3)).Join(" ");
         }
 
+        /// <summary>
+        /// Gets several paragraphs.
+        /// </summary>
+        /// <param name="paragraphCount">The number of paragraphs to get, defaults with 3.</param>
+        /// <returns>Several paragraphs.</returns>
         public static IEnumerable<string> GetParagraphs(int paragraphCount = 3)
         {
             return 1.To(paragraphCount).Select(item => GetParagraph());

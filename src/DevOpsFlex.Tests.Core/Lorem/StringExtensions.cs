@@ -5,7 +5,7 @@ namespace DevOpsFlex.Tests.Core
     using System.Collections.Generic;
     using System.Text;
 
-    public static class StringExtensions
+    internal static class StringExtensions
     {
         private static readonly Random Rng = new Random();
 
