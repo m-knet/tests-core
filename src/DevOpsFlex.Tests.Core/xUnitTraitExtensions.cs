@@ -128,6 +128,10 @@
     [TraitDiscoverer(EswCategoryDiscoverer.FullyQualifiedName, EswCategoryDiscoverer.Namespace)]
     public abstract class EswCategoryAttribute : Attribute, ITraitAttribute
     {
+        /// <summary>
+        /// Initializes a new instance of <see cref="EswCategoryAttribute"/>.
+        /// </summary>
+        /// <param name="categories">The trait categories present in the attribute.</param>
         protected EswCategoryAttribute(params string[] categories)
         {
             Categories = categories;

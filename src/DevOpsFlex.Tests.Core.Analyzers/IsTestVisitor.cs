@@ -19,7 +19,13 @@ namespace DevOpsFlex.Tests.Core.Analyzers
                 "IsCodeContract",
                 "IsCodeContractAttribute",
                 "IsRoslyn",
-                "IsRoslynAttribute"
+                "IsRoslynAttribute",
+                "IsDev",
+                "IsDevAttribute",
+                "IsProfilerCpu",
+                "IsProfilerCpuAttribute",
+                "IsProfilerMemory",
+                "IsProfilerMemoryAttribute"
             };
 
         public override bool VisitMethodDeclaration(MethodDeclarationSyntax node)
