@@ -30,7 +30,7 @@ namespace DevOpsFlex.Tests.Core.Analyzers
 
         public override bool VisitMethodDeclaration(MethodDeclarationSyntax node)
         {
-            if (node.AttributeLists.SelectMany(l => l.Attributes).Any(a => a.Name.ToString() == "Fact"))
+            if (node.AttributeLists.SelectMany(l => l.Attributes).Any(a => a.Name.ToString() == "Fact" || a.Name.ToString() == "Theory"))
             {
                 return !node.AttributeLists.SelectMany(l => l.Attributes).Any(a => _isTestAttributes.Contains(a.Name.ToString()));
             }

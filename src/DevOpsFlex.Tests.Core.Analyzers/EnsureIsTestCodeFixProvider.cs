@@ -11,8 +11,6 @@
     using Microsoft.CodeAnalysis.CSharp;
     using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-    // TODO: SWAP TO CLIB INSTEAD OF PCL AND MOVE TO NAMEOF!
-
     [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(EnsureIsTestCodeFixProvider)), Shared]
     public class EnsureIsTestCodeFixProvider : CodeFixProvider
     {
