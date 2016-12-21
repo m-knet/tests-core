@@ -6,9 +6,15 @@ namespace DevOpsFlex.Tests.Core.Analyzers
     using Microsoft.CodeAnalysis.CSharp.Syntax;
     using Microsoft.CodeAnalysis.Diagnostics;
 
+    /// <summary>
+    /// Analyzes that there are no tests using MSTest as the test framework.
+    /// </summary>
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class EnsureTestFrameworkAnalyzer : DiagnosticAnalyzer
     {
+        /// <summary>
+        /// The ID of this diagnostic analyzer.
+        /// </summary>
         public const string DiagnosticId = "ESWU001";
 
         private static readonly LocalizableString Title = new LocalizableResourceString(nameof(Resources.TestFrameworkTitle), Resources.ResourceManager, typeof(Resources));
@@ -20,8 +26,15 @@ namespace DevOpsFlex.Tests.Core.Analyzers
 
         private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, Category, DiagnosticSeverity.Error, EnabledByDefault, Description);
 
+        /// <summary>
+        /// Returns a set of descriptors for the diagnostics that this analyzer is capable of producing.
+        /// </summary>
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
 
+        /// <summary>
+        /// Called once at session start to register actions in the analysis context.
+        /// </summary>
+        /// <param name="context">The <see cref="AnalysisContext"/> that this analyzer starts from.</param>
         public override void Initialize(AnalysisContext context)
         {
             context.RegisterSyntaxNodeAction(EnsureXUnit, SyntaxKind.MethodDeclaration);

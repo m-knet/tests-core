@@ -6,8 +6,16 @@ namespace DevOpsFlex.Tests.Core.Analyzers
     using Microsoft.CodeAnalysis.CSharp;
     using Microsoft.CodeAnalysis.CSharp.Syntax;
 
+    /// <summary>
+    /// Provides a Re-Writer to replace the MSTest <see cref="System.Attribute"/> with the xUnit 'Fact' <see cref="System.Attribute"/> to a <see cref="MethodDeclarationSyntax"/> node.
+    /// </summary>
     public class TestFrameworkRewriter : CSharpSyntaxRewriter
     {
+        /// <summary>
+        /// Visits a <see cref="MethodDeclarationSyntax"/> node, clones it and replaces the MSTest <see cref="System.Attribute"/> with the xUnit 'Fact' <see cref="System.Attribute"/>.
+        /// </summary>
+        /// <param name="node">The <see cref="MethodDeclarationSyntax"/> node that we are visiting.</param>
+        /// <returns>The new node with the Is* decorator attribute</returns>
         public override SyntaxNode VisitMethodDeclaration(MethodDeclarationSyntax node)
         {
             var msTestList = node.AttributeLists.Where(l => l.Attributes.Any(a => a.Name.ToString() == "TestMethod")); 
