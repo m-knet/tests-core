@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Esw.UnitTest.Common">
-      <HintPath>..\..\Esw.UnitTests.Common\bin\Esw.UnitTest.Common.dll</HintPath>
+    <Reference Include="DevOpsFlex.Tests.Core">
+      <HintPath>..\..\DevOpsFlex.Tests.Core\bin\DevOpsFlex.Tests.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
