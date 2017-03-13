@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>DevOpsFlex.Tests.Core.Analyzers</id>
-    <version>1.0.2</version>
+    <version>1.0.7</version>
     <title>DevOpsFlex.Tests.Core.Analyzers</title>
     <authors>David Rodrigues</authors>
     <owners>eShopWorld</owners>
