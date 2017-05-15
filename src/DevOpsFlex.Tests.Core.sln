@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4946AD13-F768-4F08-82AA-5EF1C1B24910}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analyzers", "Analyzers", "{9FDBC728-CEBE-40AD-A545-D10D412CD504}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5529E4C-7615-487D-8AB1-58245345E1B9}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOpsFlex.Tests.Core", "DevOpsFlex.Tests.Core\DevOpsFlex.Tests.Core.csproj", "{6EDBFBFC-A0A0-4650-A92E-B9A686C967FE}"
 EndProject
@@ -16,11 +21,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOpsFlex.Tests.Core.Analyzers.Test", "Tests\DevOpsFlex.Tests.Core.Analyzers.Test\DevOpsFlex.Tests.Core.Analyzers.Test.csproj", "{62938EBD-F83A-4F9C-8BA6-6A08E7FDAFE6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOpsFlex.Tests.Core.Tests", "Tests\DevOpsFlex.Tests.Core.Tests\DevOpsFlex.Tests.Core.Tests.csproj", "{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5529E4C-7615-487D-8AB1-58245345E1B9}"
-	ProjectSection(SolutionItems) = preProject
-		..\README.md = ..\README.md
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
