@@ -35,6 +35,20 @@
     }
 
     /// <summary>
+    /// Decorates a test as a Read Only Integration Test, so that it runs in Continuous Integration builds and can also run in Production.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+    public sealed class IsIntegrationReadOnlyAttribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsIntegrationReadOnlyAttribute"/>
+        /// </summary>
+        public IsIntegrationReadOnlyAttribute() : base("Integration", "ReadOnly")
+        {
+        }
+    }
+
+    /// <summary>
     /// Decorates a test as a Unit Test and as requiring Fakes to be present, so that it runs in Continuous Integration builds.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]

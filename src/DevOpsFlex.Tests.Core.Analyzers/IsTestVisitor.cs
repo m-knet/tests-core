@@ -18,6 +18,8 @@ namespace DevOpsFlex.Tests.Core.Analyzers
                 "IsUnitAttribute",
                 "IsIntegration",
                 "IsIntegrationAttribute",
+                "IsIntegrationReadOnly",
+                "IsIntegrationReadOnlyAttribute",
                 "IsFakes",
                 "IsFakesAttribute",
                 "IsCodeContract",
