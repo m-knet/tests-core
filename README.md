@@ -48,6 +48,7 @@ Contains a set of Is* trait attributes that aggregate specific trait categories,
 
 - **IsUnit** - "Unit"
 - **IsIntegration** - "Integration"
+- **IsIntegrationReadOnly** - "Integration" + "ReadOnly"
 - **IsFakes** - "Unit" + "Fakes"
 - **IsCodeContract** - "Unit" + "CodeContract"
 - **IsRoslyn** - "Unit" + "Roslyn"
