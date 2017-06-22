@@ -15,9 +15,7 @@
         /// <summary>
         /// Initializes a new instance of <see cref="IsUnitAttribute"/>
         /// </summary>
-        public IsUnitAttribute() : base("Unit")
-        {
-        }
+        public IsUnitAttribute() : base("Unit") { }
     }
 
     /// <summary>
@@ -29,9 +27,7 @@
         /// <summary>
         /// Initializes a new instance of <see cref="IsIntegrationAttribute"/>
         /// </summary>
-        public IsIntegrationAttribute() : base("Integration")
-        {
-        }
+        public IsIntegrationAttribute() : base("Integration") { }
     }
 
     /// <summary>
@@ -43,9 +39,32 @@
         /// <summary>
         /// Initializes a new instance of <see cref="IsIntegrationReadOnlyAttribute"/>
         /// </summary>
-        public IsIntegrationReadOnlyAttribute() : base("Integration", "ReadOnly")
-        {
-        }
+        public IsIntegrationReadOnlyAttribute() : base("Integration", "ReadOnly") { }
+    }
+
+    /// <summary>
+    /// Decorates a test as a WarmUp Test, so that it runs in Continuous Integration builds ahead of Integration tests
+    ///     to warm up the deployment and kick off things like EF migrations.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+    public sealed class IsWarmUpAttribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsWarmUpAttribute"/>
+        /// </summary>
+        public IsWarmUpAttribute() : base("WarmUp") { }
+    }
+
+    /// <summary>
+    /// Decorates a test as a Coded UI Test, so that it runs in Continuous Integration builds as a Coded UI test.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+    public sealed class IsAutomatedUiAttribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsAutomatedUiAttribute"/>
+        /// </summary>
+        public IsAutomatedUiAttribute() : base("AutomatedUi") { }
     }
 
     /// <summary>
@@ -57,9 +76,7 @@
         /// <summary>
         /// Initializes a new instance of <see cref="IsFakesAttribute"/>
         /// </summary>
-        public IsFakesAttribute() : base("Unit", "Fakes")
-        {
-        }
+        public IsFakesAttribute() : base("Unit", "Fakes") { }
     }
 
     /// <summary>
@@ -71,9 +88,7 @@
         /// <summary>
         /// Initializes a new instance of <see cref="IsCodeContractAttribute"/>
         /// </summary>
-        public IsCodeContractAttribute() : base("Unit", "CodeContract")
-        {
-        }
+        public IsCodeContractAttribute() : base("Unit", "CodeContract") { }
     }
 
     /// <summary>
@@ -85,9 +100,7 @@
         /// <summary>
         /// Initializes a new instance of <see cref="IsRoslynAttribute"/>
         /// </summary>
-        public IsRoslynAttribute() : base("Unit", "Roslyn")
-        {
-        }
+        public IsRoslynAttribute() : base("Unit", "Roslyn") { }
     }
 
     /// <summary>
@@ -100,9 +113,7 @@
         /// <summary>
         /// Initializes a new instance of <see cref="IsDevAttribute"/>
         /// </summary>
-        public IsDevAttribute() : base("Dev")
-        {
-        }
+        public IsDevAttribute() : base("Dev") { }
     }
 
     /// <summary>
@@ -115,9 +126,7 @@
         /// <summary>
         /// Initializes a new instance of <see cref="IsProfilerCpuAttribute"/>
         /// </summary>
-        public IsProfilerCpuAttribute() : base("Profiler CPU")
-        {
-        }
+        public IsProfilerCpuAttribute() : base("Profiler CPU") { }
     }
 
     /// <summary>
@@ -130,9 +139,7 @@
         /// <summary>
         /// Initializes a new instance of <see cref="IsProfilerMemoryAttribute"/>
         /// </summary>
-        public IsProfilerMemoryAttribute() : base("Profiler Memory")
-        {
-        }
+        public IsProfilerMemoryAttribute() : base("Profiler Memory") { }
     }
 
     /// <summary>
