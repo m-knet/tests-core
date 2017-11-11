@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <IsPackable>true</IsPackable>
     <PackageId>DevOpsFlex.Tests.Core</PackageId>
     <Version>1.1.2</Version>
     <Authors>David Rodrigues</Authors>
@@ -10,15 +11,11 @@
     <Description>eShopWorld common test stack</Description>
     <PackageLicenseUrl>https://github.com/eShopWorld/devopsflex-testscore/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/eShopWorld/devopsflex-testscore</PackageProjectUrl>
-    <PackageReleaseNotes>refactored into .net standard project</PackageReleaseNotes>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Copyright>Copyright 2017</Copyright>
+    <Copyright>Copyright eShopWorld 2017</Copyright>
     <PackageTags>Test, Unit Test, xUnit, Moq, FluentAssertions</PackageTags>
     <AssemblyName>DevOpsFlex.Tests.Core</AssemblyName>
     <RootNamespace>DevOpsFlex.Tests.Core</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <NeutralLanguage />
-    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
