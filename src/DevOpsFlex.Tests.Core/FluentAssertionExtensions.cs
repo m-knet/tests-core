@@ -18,7 +18,7 @@
         /// <returns>The specialized <see cref="ExceptionAssertions{TException}"/> for fluent API continuations.</returns>
         public static ExceptionAssertions<Exception> ShouldThrowPreContract(this Action action, string because = null, params object[] reasonArgs)
         {
-            var specializedAssert = action.ShouldThrow<Exception>(because, reasonArgs);
+            var specializedAssert = action.Should().Throw<Exception>(because, reasonArgs);
 
             specializedAssert.Where(e => e.GetType().Name == "ContractException")
                              .Which.Message.ToLower().Should().Contain("precondition failed:");
@@ -35,7 +35,7 @@
         /// <returns>The specialized <see cref="ExceptionAssertions{TException}"/> for fluent API continuations.</returns>
         public static ExceptionAssertions<Exception> ShouldThrowPostContract(this Action action, string because = null, params object[] reasonArgs)
         {
-            var specializedAssert = action.ShouldThrow<Exception>(because, reasonArgs);
+            var specializedAssert = action.Should().Throw<Exception>(because, reasonArgs);
 
             specializedAssert.Where(e => e.GetType().Name == "ContractException")
                              .Which.Message.ToLower().Should().Contain("postcondition failed:");
