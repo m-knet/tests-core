@@ -1,4 +1,4 @@
-﻿namespace DevOpsFlex.Tests.Core.Analyzers.Test
+﻿namespace Eshopworld.Tests.Core.Analyzers.Test
 {
     using System.Collections.Generic;
     using System.Linq;

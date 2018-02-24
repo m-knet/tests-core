@@ -1,4 +1,4 @@
-﻿namespace DevOpsFlex.Tests.Core.Tests
+﻿namespace Eshopworld.Tests.Core.Tests
 {
     using Xunit;
 

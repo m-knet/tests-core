@@ -19,8 +19,8 @@
     <ProjectGuid>{EF85FF9E-A56A-42E4-816D-4201723779FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Esw.UnitTest.Common.Analyzers.Vsix</RootNamespace>
-    <AssemblyName>Esw.UnitTest.Common.Analyzers.Vsix</AssemblyName>
+    <RootNamespace>Eshopworld.Tests.Core.Analyzers.Vsix</RootNamespace>
+    <AssemblyName>Eshopworld.Tests.Core.Analyzers.Vsix</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>

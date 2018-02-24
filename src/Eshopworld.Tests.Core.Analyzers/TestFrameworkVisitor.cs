@@ -1,4 +1,4 @@
-namespace DevOpsFlex.Tests.Core.Analyzers
+namespace Eshopworld.Tests.Core.Analyzers
 {
     using System.Linq;
     using Microsoft.CodeAnalysis.CSharp;

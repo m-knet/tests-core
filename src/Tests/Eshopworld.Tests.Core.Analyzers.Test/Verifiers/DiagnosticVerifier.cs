@@ -1,8 +1,9 @@
-﻿namespace DevOpsFlex.Tests.Core.Analyzers.Test
+﻿namespace Eshopworld.Tests.Core.Analyzers.Test
 {
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using Helpers;
     using Microsoft.CodeAnalysis;
     using Microsoft.CodeAnalysis.Diagnostics;
     using Microsoft.VisualStudio.TestTools.UnitTesting;

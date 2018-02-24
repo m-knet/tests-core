@@ -1,4 +1,4 @@
-﻿namespace DevOpsFlex.Tests.Core.Analyzers.Test
+﻿namespace Eshopworld.Tests.Core.Analyzers.Test.Helpers
 {
     using System;
     using Microsoft.CodeAnalysis;

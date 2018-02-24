@@ -1,11 +1,10 @@
-﻿namespace DevOpsFlex.Tests.Core.Analyzers.Test
+﻿namespace Eshopworld.Tests.Core.Analyzers.Test
 {
     using System;
-    using Analyzers;
+    using Helpers;
     using Microsoft.CodeAnalysis;
     using Microsoft.CodeAnalysis.CodeFixes;
     using Microsoft.CodeAnalysis.Diagnostics;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     //[TestClass]
     public class UnitTest : CodeFixVerifier
