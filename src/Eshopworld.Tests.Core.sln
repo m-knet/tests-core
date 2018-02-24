@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4946AD13-F768-4F08-82AA-5EF1C1B24910}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analyzers", "Analyzers", "{9FDBC728-CEBE-40AD-A545-D10D412CD504}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5529E4C-7615-487D-8AB1-58245345E1B9}"
@@ -12,15 +10,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOpsFlex.Tests.Core.Analyzers", "DevOpsFlex.Tests.Core.Analyzers\DevOpsFlex.Tests.Core.Analyzers.csproj", "{ED355FCA-65CF-4207-8429-96A4C53AB74C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eshopworld.Tests.Core", "Eshopworld.Tests.Core\Eshopworld.Tests.Core.csproj", "{03E9D76B-6463-4650-BF60-F62E37D6E233}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOpsFlex.Tests.Core.Analyzers.Vsix", "DevOpsFlex.Tests.Core.Analyzers.Vsix\DevOpsFlex.Tests.Core.Analyzers.Vsix.csproj", "{EF85FF9E-A56A-42E4-816D-4201723779FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eshopworld.Tests.Core.Tests", "Tests\Eshopworld.Tests.Core.Tests\Eshopworld.Tests.Core.Tests.csproj", "{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOpsFlex.Tests.Core.Analyzers.Test", "Tests\DevOpsFlex.Tests.Core.Analyzers.Test\DevOpsFlex.Tests.Core.Analyzers.Test.csproj", "{62938EBD-F83A-4F9C-8BA6-6A08E7FDAFE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eshopworld.Tests.Core.Analyzers", "Eshopworld.Tests.Core.Analyzers\Eshopworld.Tests.Core.Analyzers.csproj", "{ED355FCA-65CF-4207-8429-96A4C53AB74C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOpsFlex.Tests.Core.Tests", "Tests\DevOpsFlex.Tests.Core.Tests\DevOpsFlex.Tests.Core.Tests.csproj", "{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eshopworld.Tests.Core.Analyzers.Vsix", "Eshopworld.Tests.Core.Analyzers.Vsix\Eshopworld.Tests.Core.Analyzers.Vsix.csproj", "{EF85FF9E-A56A-42E4-816D-4201723779FB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevOpsFlex.Tests.Core", "DevOpsFlex.Tests.Core\DevOpsFlex.Tests.Core.csproj", "{2B8BA6D5-9DB0-4839-BC08-60808EB57E74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eshopworld.Tests.Core.Analyzers.Test", "Tests\Eshopworld.Tests.Core.Analyzers.Test\Eshopworld.Tests.Core.Analyzers.Test.csproj", "{62938EBD-F83A-4F9C-8BA6-6A08E7FDAFE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +26,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03E9D76B-6463-4650-BF60-F62E37D6E233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E9D76B-6463-4650-BF60-F62E37D6E233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E9D76B-6463-4650-BF60-F62E37D6E233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E9D76B-6463-4650-BF60-F62E37D6E233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ED355FCA-65CF-4207-8429-96A4C53AB74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ED355FCA-65CF-4207-8429-96A4C53AB74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED355FCA-65CF-4207-8429-96A4C53AB74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,18 +41,11 @@ Global
 		{EF85FF9E-A56A-42E4-816D-4201723779FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EF85FF9E-A56A-42E4-816D-4201723779FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF85FF9E-A56A-42E4-816D-4201723779FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF85FF9E-A56A-42E4-816D-4201723779FB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{62938EBD-F83A-4F9C-8BA6-6A08E7FDAFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{62938EBD-F83A-4F9C-8BA6-6A08E7FDAFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62938EBD-F83A-4F9C-8BA6-6A08E7FDAFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62938EBD-F83A-4F9C-8BA6-6A08E7FDAFE6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B8BA6D5-9DB0-4839-BC08-60808EB57E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B8BA6D5-9DB0-4839-BC08-60808EB57E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B8BA6D5-9DB0-4839-BC08-60808EB57E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B8BA6D5-9DB0-4839-BC08-60808EB57E74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,8 +53,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ED355FCA-65CF-4207-8429-96A4C53AB74C} = {9FDBC728-CEBE-40AD-A545-D10D412CD504}
 		{EF85FF9E-A56A-42E4-816D-4201723779FB} = {9FDBC728-CEBE-40AD-A545-D10D412CD504}
-		{62938EBD-F83A-4F9C-8BA6-6A08E7FDAFE6} = {4946AD13-F768-4F08-82AA-5EF1C1B24910}
-		{BDF6C28D-8A87-4EF8-BEC4-83E9D306A08F} = {4946AD13-F768-4F08-82AA-5EF1C1B24910}
+		{62938EBD-F83A-4F9C-8BA6-6A08E7FDAFE6} = {9FDBC728-CEBE-40AD-A545-D10D412CD504}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48E5A7A9-2404-4B47-B925-99C362AE9055}

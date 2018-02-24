@@ -54,7 +54,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="DevOpsFlex.Tests.Core.Analyzers.nuspec">
+    <None Include="Eshopworld.Tests.Core.Analyzers.nuspec">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

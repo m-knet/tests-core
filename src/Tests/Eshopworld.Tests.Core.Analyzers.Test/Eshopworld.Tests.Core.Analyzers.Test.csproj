@@ -185,9 +185,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DevOpsFlex.Tests.Core.Analyzers\DevOpsFlex.Tests.Core.Analyzers.csproj">
+    <ProjectReference Include="..\..\Eshopworld.Tests.Core.Analyzers\Eshopworld.Tests.Core.Analyzers.csproj">
       <Project>{ED355FCA-65CF-4207-8429-96A4C53AB74C}</Project>
-      <Name>DevOpsFlex.Tests.Core.Analyzers</Name>
+      <Name>Eshopworld.Tests.Core.Analyzers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

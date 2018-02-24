@@ -3,23 +3,22 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <IsPackable>true</IsPackable>
-    <PackageId>DevOpsFlex.Tests.Core</PackageId>
+    <PackageId>Eshopworld.Tests.Core</PackageId>
     <Version>1.1.2</Version>
     <Authors>David Rodrigues</Authors>
     <Company>eShopWorld</Company>
-    <Product>DevOpsFlex.Tests.Core</Product>
+    <Product>Eshopworld.Tests.Core</Product>
     <Description>eShopWorld common test stack</Description>
-    <PackageLicenseUrl>https://github.com/eShopWorld/devopsflex-testscore/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/eShopWorld/devopsflex-testscore</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/eShopWorld/tests-core/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/eShopWorld/tests-core</PackageProjectUrl>
     <Copyright>Copyright eShopWorld 2017</Copyright>
     <PackageTags>Test, Unit Test, xUnit, Moq, FluentAssertions</PackageTags>
-    <AssemblyName>DevOpsFlex.Tests.Core</AssemblyName>
-    <RootNamespace>DevOpsFlex.Tests.Core</RootNamespace>
+    <AssemblyName>Eshopworld.Tests.Core</AssemblyName>
+    <RootNamespace>Eshopworld.Tests.Core</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevOpsFlex.Tests.Core.Analyzers" Version="1.1.0" />
     <PackageReference Include="FluentAssertions" Version="5.1.2" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
     <PackageReference Include="Moq" Version="4.8.2" />

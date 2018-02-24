@@ -95,13 +95,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DevOpsFlex.Tests.Core\DevOpsFlex.Tests.Core.csproj">
-      <Project>{2b8ba6d5-9db0-4839-bc08-60808eb57e74}</Project>
-      <Name>DevOpsFlex.Tests.Core</Name>
-    </ProjectReference>
+    <Analyzer Include="..\..\..\packages\xunit.analyzers.0.8.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="..\..\..\packages\xunit.analyzers.0.8.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+    <ProjectReference Include="..\..\Eshopworld.Tests.Core\Eshopworld.Tests.Core.csproj">
+      <Project>{03e9d76b-6463-4650-bf60-f62e37d6e233}</Project>
+      <Name>Eshopworld.Tests.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
