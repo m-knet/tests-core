@@ -1,4 +1,4 @@
-DevOpsFlex.Tests.Core
+Eshopworld.Tests.Core
 ===================
 
 Utility unit test package used in eShopWorld.
