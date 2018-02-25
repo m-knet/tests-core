@@ -1,5 +1,5 @@
 ﻿// ReSharper disable once CheckNamespace
-namespace DevOpsFlex.Tests.Core
+namespace Eshopworld.Tests.Core
 {
     using System;
     using System.Collections.Generic;
@@ -12,7 +12,7 @@ namespace DevOpsFlex.Tests.Core
         public static string Join<T>(this IEnumerable<T> items, string separator)
         {
             return items.Select(i => i.ToString())
-                        .Aggregate((acc, next) => string.Concat(acc, separator, next));
+                .Aggregate((acc, next) => string.Concat(acc, separator, next));
         }
 
         public static T Rand<T>(this IEnumerable<T> items)

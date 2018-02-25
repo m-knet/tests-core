@@ -1,5 +1,5 @@
 ﻿// ReSharper disable once CheckNamespace
-namespace DevOpsFlex.Tests.Core
+namespace Eshopworld.Tests.Core
 {
     using System;
     using System.Collections.Generic;
