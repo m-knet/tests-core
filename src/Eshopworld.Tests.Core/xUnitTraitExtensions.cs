@@ -143,6 +143,45 @@
     }
 
     /// <summary>
+    /// Decorates a test as profiler entry point for profiling memory.
+    /// This test never runs on any automated build, is purely a development facility.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+    public sealed class IsLayer0Attribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsProfilerMemoryAttribute"/>
+        /// </summary>
+        public IsLayer0Attribute() : base("Layer0") { }
+    }
+
+    /// <summary>
+    /// Decorates a test as profiler entry point for profiling memory.
+    /// This test never runs on any automated build, is purely a development facility.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+    public sealed class IsLayer1Attribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsProfilerMemoryAttribute"/>
+        /// </summary>
+        public IsLayer1Attribute() : base("Layer1") { }
+    }
+
+    /// <summary>
+    /// Decorates a test as profiler entry point for profiling memory.
+    /// This test never runs on any automated build, is purely a development facility.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+    public sealed class IsLayer2Attribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsProfilerMemoryAttribute"/>
+        /// </summary>
+        public IsLayer2Attribute() : base("Layer2") { }
+    }
+
+    /// <summary>
     /// Base class for all the category model attributes. Contains a list of all the attribute categories
     /// and supports multiple categories.
     /// </summary>

@@ -27,5 +27,14 @@
 
         [Fact, IsProfilerMemory]
         public void Test_IsProfilerMemory() { }
+
+        [Fact, IsLayer0]
+        public void Test_IsLayer0() { }
+
+        [Fact, IsLayer1]
+        public void Test_IsLayer1() { }
+
+        [Fact, IsLayer2]
+        public void Test_IsLayer2() { }
     }
 }

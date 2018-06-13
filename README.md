@@ -57,3 +57,6 @@ Contains a set of Is* trait attributes that aggregate specific trait categories,
 - **IsDev** - "Dev"
 - **IsProfilerCpu** - "Profiler CPU"
 - **IsProfilerMemory** - "Profiler Memory"
+- **IsLayer0** - "Layer0"
+- **IsLayer1** - "Layer1"
+- **IsLayer2** - "Layer2"
