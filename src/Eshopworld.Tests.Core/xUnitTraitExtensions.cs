@@ -143,8 +143,8 @@
     }
 
     /// <summary>
-    /// Decorates a test as profiler entry point for profiling memory.
-    /// This test never runs on any automated build, is purely a development facility.
+    /// decorates a test as L0 test
+    /// this was added to facilitate lowest level of L(x) test categorization, logically equivalent to basic unit test
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public sealed class IsLayer0Attribute : EswCategoryAttribute
@@ -156,8 +156,7 @@
     }
 
     /// <summary>
-    /// Decorates a test as profiler entry point for profiling memory.
-    /// This test never runs on any automated build, is purely a development facility.
+    /// L1 test aimed at being executed during build stage - effectively CI attribute
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public sealed class IsLayer1Attribute : EswCategoryAttribute
@@ -169,8 +168,7 @@
     }
 
     /// <summary>
-    /// Decorates a test as profiler entry point for profiling memory.
-    /// This test never runs on any automated build, is purely a development facility.
+    /// L1 test aimed at being executed during deploy stage - effectively CD attribute
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public sealed class IsLayer2Attribute : EswCategoryAttribute

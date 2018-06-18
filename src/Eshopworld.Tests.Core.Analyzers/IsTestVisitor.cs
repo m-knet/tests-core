@@ -31,7 +31,10 @@ namespace Eshopworld.Tests.Core.Analyzers
                 "IsProfilerCpu",
                 "IsProfilerCpuAttribute",
                 "IsProfilerMemory",
-                "IsProfilerMemoryAttribute"
+                "IsProfilerMemoryAttribute",
+                "IsLayer0Attribute",
+                "IsLayer1Attribute",
+                "IsLayer2Attribute"
             };
 
         /// <summary>

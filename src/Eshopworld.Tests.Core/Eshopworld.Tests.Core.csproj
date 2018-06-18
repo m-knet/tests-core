@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <IsPackable>true</IsPackable>
     <PackageId>Eshopworld.Tests.Core</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>David Rodrigues</Authors>
     <Company>eShopWorld</Company>
     <Product>Eshopworld.Tests.Core</Product>
