@@ -33,8 +33,11 @@ namespace Eshopworld.Tests.Core.Analyzers
                 "IsProfilerMemory",
                 "IsProfilerMemoryAttribute",
                 "IsLayer0Attribute",
+                "IsLayer0",
                 "IsLayer1Attribute",
-                "IsLayer2Attribute"
+                "IsLayer1",
+                "IsLayer2Attribute",
+                "IsLayer2"
             };
 
         /// <summary>
