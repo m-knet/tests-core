@@ -3,8 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <IsPackable>true</IsPackable>
+
     <PackageId>Eshopworld.Tests.Core</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>David Rodrigues</Authors>
     <Company>eShopWorld</Company>
     <Product>Eshopworld.Tests.Core</Product>
@@ -22,7 +23,7 @@
     <PackageReference Include="Eshopworld.Tests.Core.Analyzers" Version="1.0.3" />
     <PackageReference Include="FluentAssertions" Version="5.4.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
-    <PackageReference Include="Moq" Version="4.9.0" />
+    <PackageReference Include="Moq" Version="4.10.0" />
     <PackageReference Include="xunit" Version="2.4.0" />
   </ItemGroup>
 
