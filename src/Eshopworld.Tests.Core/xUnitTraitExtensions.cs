@@ -155,7 +155,7 @@
     }
 
     /// <summary>
-    /// L1 test aimed at being executed during deploy stage - effectively CD attribute
+    /// L2 test aimed at being executed during deploy stage - effectively CD attribute
     /// </summary>
     public sealed class IsLayer2Attribute : EswCategoryAttribute
     {
@@ -163,6 +163,17 @@
         /// Initializes a new instance of <see cref="IsProfilerMemoryAttribute"/>
         /// </summary>
         public IsLayer2Attribute() : base("Layer2") { }
+    }
+
+    /// <summary>
+    /// L3 test designates effectively L2 time consuming/chunky tests
+    /// </summary>
+    public sealed class IsLayer3Attribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsProfilerMemoryAttribute"/>
+        /// </summary>
+        public IsLayer3Attribute() : base("Layer3") { }
     }
 
     /// <summary>
