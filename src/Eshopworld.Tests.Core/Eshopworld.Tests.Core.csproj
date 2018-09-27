@@ -5,8 +5,8 @@
     <IsPackable>true</IsPackable>
 
     <PackageId>Eshopworld.Tests.Core</PackageId>
-    <Version>1.0.4</Version>
-    <Authors>David Rodrigues</Authors>
+    <Version>1.0.5</Version>
+    <Authors>David Rodrigues, Oisin Haken</Authors>
     <Company>eShopWorld</Company>
     <Product>Eshopworld.Tests.Core</Product>
     <Description>eShopWorld common test stack</Description>
@@ -17,6 +17,7 @@
     <AssemblyName>Eshopworld.Tests.Core</AssemblyName>
     <RootNamespace>Eshopworld.Tests.Core</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>added Level3 tests</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

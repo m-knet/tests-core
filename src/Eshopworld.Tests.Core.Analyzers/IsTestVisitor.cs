@@ -37,7 +37,9 @@ namespace Eshopworld.Tests.Core.Analyzers
                 "IsLayer1Attribute",
                 "IsLayer1",
                 "IsLayer2Attribute",
-                "IsLayer2"
+                "IsLayer2",
+                "IsLayer3Attribute",
+                "IsLayer3"
             };
 
         /// <summary>

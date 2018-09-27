@@ -36,5 +36,8 @@
 
         [Fact, IsLayer2]
         public void Test_IsLayer2() { }
+
+        [Fact, IsLayer3]
+        public void Test_IsLayer3() { }
     }
 }
