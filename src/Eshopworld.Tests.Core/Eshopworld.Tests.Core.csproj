@@ -14,7 +14,7 @@
     <Description>eShopWorld common test stack</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/eShopWorld/tests-core</PackageProjectUrl>
-    <Copyright>Copyright eShopWorld 2017</Copyright>
+    <Copyright>Copyright eShopWorld 2019</Copyright>
     <PackageTags>Test, Unit Test, xUnit, Moq, FluentAssertions</PackageTags>
     <AssemblyName>Eshopworld.Tests.Core</AssemblyName>
     <RootNamespace>Eshopworld.Tests.Core</RootNamespace>
