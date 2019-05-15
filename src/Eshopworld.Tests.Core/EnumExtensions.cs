@@ -38,7 +38,7 @@
         /// </summary>
         /// <typeparam name="T">The <see cref="Type"/> of the enumeration that we are randomizing.</typeparam>
         /// <returns>A random value from the enumeration <see cref="Type"/></returns>
-        public static T Random<T>()
+        public static T Random<T>() where T : Enum
         {
             var values = Enum.GetValues(typeof(T));
             return (T)values.GetValue(Rng.Next(values.Length));
