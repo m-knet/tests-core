@@ -10,6 +10,8 @@
     /// </summary>
     public static class EnumExtensions
     {
+        private static readonly Random Rng = new Random();
+
         /// <summary>
         /// Checks if 2 enums have the same elements with the same enum values.
         /// </summary>
@@ -29,6 +31,17 @@
 
             return oneExceptions.Select(e => typeof(T1).FullName + "." + e)
                                 .Concat(twoExceptions.Select(e => typeof(T2).FullName + "." + e));
+        }
+
+        /// <summary>
+        /// Returns a random value from the enumeration <see cref="Type"/>.
+        /// </summary>
+        /// <typeparam name="T">The <see cref="Type"/> of the enumeration that we are randomizing.</typeparam>
+        /// <returns>A random value from the enumeration <see cref="Type"/></returns>
+        public static T Random<T>()
+        {
+            var values = Enum.GetValues(typeof(T));
+            return (T)values.GetValue(Rng.Next(values.Length));
         }
     }
 }
