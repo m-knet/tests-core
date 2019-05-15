@@ -4,8 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <IsPackable>true</IsPackable>
 
-    <Version>1.1.0</Version>
-    <PackageReleaseNotes>Bumped all test dependencies to support latest VS2019 test SDKs.</PackageReleaseNotes>
+    <Version>1.1.1</Version>
+    <PackageReleaseNotes>Added an Enum random method.</PackageReleaseNotes>
 
     <PackageId>Eshopworld.Tests.Core</PackageId>
     <Authors>David Rodrigues, Oisin Haken</Authors>
