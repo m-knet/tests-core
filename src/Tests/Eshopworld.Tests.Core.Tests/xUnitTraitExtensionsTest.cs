@@ -39,5 +39,8 @@
 
         [Fact, IsLayer3]
         public void Test_IsLayer3() { }
+
+        [Fact, IsIntegrationHealthCheck]
+        public void Test_IsIntegrationHealthCheck() { }
     }
 }

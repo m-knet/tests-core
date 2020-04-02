@@ -49,6 +49,7 @@ Contains a set of Is* trait attributes that aggregate specific trait categories,
 - **IsUnit** - "Unit"
 - **IsIntegration** - "Integration"
 - **IsIntegrationReadOnly** - "Integration" + "ReadOnly"
+- **IsIntegrationHealthCheck** - "Integration" + "ReadOnly" + "HealthCheck"
 - **IsWarmUpAttribute** - "WarmUp"
 - **IsAutomatedUiAttribute** - "AutomatedUi"
 - **IsFakes** - "Unit" + "Fakes"
