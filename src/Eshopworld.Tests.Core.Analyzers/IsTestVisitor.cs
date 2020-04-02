@@ -20,6 +20,8 @@ namespace Eshopworld.Tests.Core.Analyzers
                 "IsIntegrationAttribute",
                 "IsIntegrationReadOnly",
                 "IsIntegrationReadOnlyAttribute",
+                "IsIntegrationHealthCheck",
+                "IsIntegrationHealthCheckAttribute",
                 "IsFakes",
                 "IsFakesAttribute",
                 "IsCodeContract",

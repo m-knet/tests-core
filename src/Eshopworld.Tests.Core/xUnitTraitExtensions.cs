@@ -40,6 +40,18 @@
     }
 
     /// <summary>
+    /// Decorate a test as a Read Only Health Check Integration Test, so that it runs in Continuous Integration builds
+    ///     and can run in all environments without any authentication.
+    /// </summary>
+    public sealed class IsIntegrationHealthCheckAttribute : EswCategoryAttribute
+    {
+        /// <summary>
+        /// Initializes a new instance of <see cref="IsIntegrationHealthCheckAttribute"/>
+        /// </summary>
+        public IsIntegrationHealthCheckAttribute() : base("Integration", "ReadOnly", "HealthCheck") { }
+    }
+
+    /// <summary>
     /// Decorates a test as a WarmUp Test, so that it runs in Continuous Integration builds ahead of Integration tests
     ///     to warm up the deployment and kick off things like EF migrations.
     /// </summary>
@@ -138,7 +150,7 @@
     public sealed class IsLayer0Attribute : EswCategoryAttribute
     {
         /// <summary>
-        /// Initializes a new instance of <see cref="IsProfilerMemoryAttribute"/>
+        /// Initializes a new instance of <see cref="IsLayer0Attribute"/>
         /// </summary>
         public IsLayer0Attribute() : base("Layer0") { }
     }
@@ -149,7 +161,7 @@
     public sealed class IsLayer1Attribute : EswCategoryAttribute
     {
         /// <summary>
-        /// Initializes a new instance of <see cref="IsProfilerMemoryAttribute"/>
+        /// Initializes a new instance of <see cref="IsLayer1Attribute"/>
         /// </summary>
         public IsLayer1Attribute() : base("Layer1") { }
     }
@@ -160,7 +172,7 @@
     public sealed class IsLayer2Attribute : EswCategoryAttribute
     {
         /// <summary>
-        /// Initializes a new instance of <see cref="IsProfilerMemoryAttribute"/>
+        /// Initializes a new instance of <see cref="IsLayer2Attribute"/>
         /// </summary>
         public IsLayer2Attribute() : base("Layer2") { }
     }
