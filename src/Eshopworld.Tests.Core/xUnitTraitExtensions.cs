@@ -192,7 +192,7 @@
     /// Base class for all the category model attributes. Contains a list of all the attribute categories
     /// and supports multiple categories.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = false)]
     [TraitDiscoverer(EswCategoryDiscoverer.FullyQualifiedName, EswCategoryDiscoverer.Namespace)]
     public abstract class EswCategoryAttribute : Attribute, ITraitAttribute
     {

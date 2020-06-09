@@ -4,8 +4,8 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <IsPackable>true</IsPackable>
 
-    <Version>2.0.3</Version>
-    <PackageReleaseNotes>Upgrade to netstandard2.1</PackageReleaseNotes>
+    <Version>2.0.4</Version>
+    <PackageReleaseNotes>Updated xUnit trait attribute to be applicable at class level.</PackageReleaseNotes>
 
     <PackageId>Eshopworld.Tests.Core</PackageId>
     <Authors>David Rodrigues, Oisin Haken</Authors>
@@ -19,7 +19,6 @@
     <AssemblyName>Eshopworld.Tests.Core</AssemblyName>
     <RootNamespace>Eshopworld.Tests.Core</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Updated to use latest analyzer package</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
