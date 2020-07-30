@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <IsPackable>true</IsPackable>
 
-    <Version>2.0.4</Version>
+    <Version>2.0.5</Version>
     <PackageReleaseNotes>Updated xUnit trait attribute to be applicable at class level.</PackageReleaseNotes>
 
     <PackageId>Eshopworld.Tests.Core</PackageId>
