@@ -4,8 +4,8 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <IsPackable>true</IsPackable>
 
-    <Version>2.0.5</Version>
-    <PackageReleaseNotes>Updated xUnit trait attribute to be applicable at class level.</PackageReleaseNotes>
+    <Version>2.0.6</Version>
+    <PackageReleaseNotes>updated dependent packages</PackageReleaseNotes>
 
     <PackageId>Eshopworld.Tests.Core</PackageId>
     <Authors>David Rodrigues, Oisin Haken</Authors>
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Eshopworld.Tests.Core.Analyzers" Version="1.0.8" />
+    <PackageReference Include="Eshopworld.Tests.Core.Analyzers" Version="1.0.9" />
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
     <PackageReference Include="Moq" Version="4.14.5" />
