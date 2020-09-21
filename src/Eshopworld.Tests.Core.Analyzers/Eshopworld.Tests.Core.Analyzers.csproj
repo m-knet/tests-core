@@ -57,6 +57,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AnalyzerReleases.Shipped.md" />
+    <None Include="AnalyzerReleases.Unshipped.md" />
     <None Include="Eshopworld.Tests.Core.Analyzers.nuspec">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
