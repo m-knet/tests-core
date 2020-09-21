@@ -37,6 +37,8 @@ namespace Eshopworld.Tests.Core.Analyzers
         /// <param name="context">The <see cref="AnalysisContext"/> that this analyzer starts from.</param>
         public override void Initialize(AnalysisContext context)
         {
+            context.EnableConcurrentExecution();
+            context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.Analyze);
             context.RegisterSyntaxNodeAction(EnsureIsTest, SyntaxKind.MethodDeclaration);
         }
 
