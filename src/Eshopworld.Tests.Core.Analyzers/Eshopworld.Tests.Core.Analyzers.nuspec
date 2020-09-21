@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Eshopworld.Tests.Core.Analyzers</id>
-    <version>1.0.8</version>
+    <version>1.0.11</version>
     <title>Eshopworld.Tests.Core.Analyzers</title>
     <authors>David Rodrigues, Oisin Haken</authors>
     <owners>eShopWorld</owners>
@@ -11,7 +11,7 @@
     <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Common entry point for any unit test assembly in eShopWorld.</description>
-    <releaseNotes>Added IntegrationHealthCheck trait attribute support</releaseNotes>
+    <releaseNotes>Downgrade of all incompatible libraries</releaseNotes>
     <copyright>eShopWorld</copyright>
     <tags>eshopworld, analyzers, unit test, unittest, test</tags>
     <frameworkAssemblies>
