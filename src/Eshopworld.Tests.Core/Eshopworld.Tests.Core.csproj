@@ -4,8 +4,8 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <IsPackable>true</IsPackable>
 
-    <Version>2.0.9</Version>
-    <PackageReleaseNotes>Add IValidator Extensions</PackageReleaseNotes>
+    <Version>2.0.10</Version>
+    <PackageReleaseNotes>Update builder to support that FluentValidation moved throwAsync from extension method to abstract validator </PackageReleaseNotes>
     <PackageIcon>icon.png</PackageIcon>
     <PackageId>Eshopworld.Tests.Core</PackageId>
     <Authors>David Rodrigues, Oisin Haken</Authors>
