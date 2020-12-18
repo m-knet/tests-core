@@ -11,6 +11,18 @@ namespace Eshopworld.Tests.Core
     public static class BigBrotherExtensions
     {
         /// <summary>
+        /// Specifies a setup on the IBigBrother mock for a call to the Publish method
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="mock">Instance of Mock&lt;IBigBrother&gt;</param>
+        /// <param name="telemetryEvent">The event to be published</param>
+        public static void SetupPublish<T>(this Mock<IBigBrother> mock, T telemetryEvent)
+            where T : TelemetryEvent
+        {
+            mock.Setup(call => call.Publish(telemetryEvent, It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>()));
+        }
+
+        /// <summary>
         /// Verifies that an event of type <typeparam name="T"></typeparam> has been published with the IBigBrother mock
         /// </summary>
         /// <typeparam name="T"></typeparam>
